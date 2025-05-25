@@ -15,7 +15,7 @@ def fibonacci_if_divisible(max_value):
   return divisible_fibonacci
 
 def main_function():
-  for line in range(len(lines) - 2):
+  for line in range(len(lines) - 1):
     # input validation
     if lines[line].isdigit() == False:
       print('N/A')
