@@ -15,12 +15,12 @@ def fibonacci_if_divisible(max_value):
   return divisible_fibonacci
 
 def main_function():
-  for line in lines:
+  for line in range(len(lines) - 2):
     # input validation
-    if line.isdigit() == False:
+    if lines[line].isdigit() == False:
       print('N/A')
     else:
-      nums = fibonacci_if_divisible(int(line))
+      nums = fibonacci_if_divisible(int(lines[line]))
       # no solution
       if len(nums) == 0:
         print('N/A')
