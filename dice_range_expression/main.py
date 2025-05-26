@@ -20,7 +20,7 @@ def calculate_wanted_num(a, b):
   wanted = b - offset
   return wanted
 
-def find_optimal(num, heck_offset):
+def find_optimal(num):
   opt = []
   check = []
   for s in dice_sides:
