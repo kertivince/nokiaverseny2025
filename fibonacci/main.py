@@ -2,7 +2,6 @@ with open('./input.txt', 'r') as f:
   input = f.read()
 
 lines = input.split('\n')
-
 #generates fibonacci numbers
 def fibonacci_if_divisible(max_value):
   fibonacci_nums = [0, 1]
