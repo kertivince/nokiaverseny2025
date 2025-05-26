@@ -5,10 +5,10 @@ print('2.:')
 
 
 task3 = 0
-for i in range(100):
+for i in range(1, 100):
     task3+=1/(ma.sqrt(i) + ma.sqrt(i+1))
 print(f"3.: {task3}")
-print('4.:')
+print('4.: 1')
 print('5.:')
 
 
