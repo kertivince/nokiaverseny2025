@@ -20,8 +20,9 @@ def calculate_wanted_num(a, b):
   wanted = b - offset
   return wanted
 
-def find_optimal(num):
+def find_optimal(num, heck_offset):
   opt = []
+  check = []
   for s in dice_sides:
     if num - s < 0 or num - s == 1:
       continue
@@ -33,6 +34,7 @@ def find_optimal(num):
         times -= 1
       num -= s * times
       opt.append(f"{times}{dices[s]}")
+      check.append(dices[s] * times)
   return opt
 
 def format_with_new_offset(main_offset, nums):

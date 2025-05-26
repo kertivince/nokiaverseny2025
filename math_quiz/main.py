@@ -1,6 +1,13 @@
 import math as ma
+import sympy as eq
 
-print('1.:')
+
+#derékszögű háromszög: átfogók: R-1; R-2, befogó: R
+#R=sqrt(pow(R-1, 2) + pow(R-2, 2))
+# R= 1; 5   - egy nem lehet ábrából következően
+print('1.: 5')
+
+
 print('2.:')
 
 
@@ -8,6 +15,7 @@ task3 = 0
 for i in range(1, 100):
     task3+=1/(ma.sqrt(i) + ma.sqrt(i+1))
 print(f"3.: {task3}")
+
 print('4.: 1')
 print('5.:')
 
